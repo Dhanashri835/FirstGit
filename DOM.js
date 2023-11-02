@@ -17,18 +17,21 @@
 
 //Get element by id //
 //console.log(document.getElementById('header-title'));
-var headerTitle = document.getElementById('header-title');
-var header = document.getElementById('main-title');
+//var headerTitle = document.getElementById('header-title');
+//var header = document.getElementById('main-title');
 console.log(headerTitle);
 //headerTitle.textContent = 'Hello';
 //headerTitle.innerText = 'Goodbye';
 //console.log(headerTitle.innerText);
 //headerTitle.innerHTML = '<h3>Hello<h3>';
-header.style.borderBottom = 'solid 3px #000';
+//header.style.borderBottom = 'solid 3px #000';
 
 //Get element by class //
 var items = document.getElementsByClassName('list-group-item');
-//console.log(items);
-console.log(title);
-title.style.fontWeight = 'bold';
-title.style.fontColour = 'green';
+console.log(items);
+console.log(items[1]);
+items[2].style.backgroundColour = 'green';
+ 
+for(var i=0; i<items.length; i++){
+    items[i].style.fontWeight = 'bold';
+}
